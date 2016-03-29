@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var ARGS = getCLIArgs();
 var app = express();
 var TABLE = ARGS.table;
-var PORT = ARGS.port;
+var PORT = ARGS.port || 8081;
 
 console.log('Using body-parser...');
 app.use(bodyParser.json());
